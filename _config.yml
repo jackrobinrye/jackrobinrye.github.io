@@ -1,11 +1,11 @@
 # Site settings
 author: Jack Atherton
-title: 
+title: I can explain!
 header-img: img/home-bg.png
 email: jackrrye@gmail.com
 copyright_name: Jack Atherton
 description: > # this means to ignore newlines until "baseurl:"
-  
+  Just some attempts to clear up confusing coding topics
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  jackrobinrye
