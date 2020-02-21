@@ -9,7 +9,7 @@ permalink:  rails_project_parktrack
 For my Rails Project I built an app, ParkTrack that kept track of 3 object classes: parks, species, and, most importantly, sightings. It was through sightings that new parks or species could be made and that the relationship between parks and species could be tracked. I picked this subject because I have spent a lot of time visiting national parks growing up and they bring back good memories. 
 
 I started my project by mapping out my relationships. Using an online program I mapped out how my relationships should look: 
-https://66.media.tumblr.com/3e27748aa885b98c38f14d3eac78c4f3/8f322dca3f5136fb-6b/s1280x1920/4ff1e4be2dddd4c753803db74b9835fede4e6519.png
+![](https://66.media.tumblr.com/3e27748aa885b98c38f14d3eac78c4f3/8f322dca3f5136fb-6b/s1280x1920/4ff1e4be2dddd4c753803db74b9835fede4e6519.png)
 
 That done, I used the rails model generator to create my models and migrations. I find that easier to do than using the migration generator and manually creating models. I went into my model files to set up my object relationships and then the real work could begin. 
 
