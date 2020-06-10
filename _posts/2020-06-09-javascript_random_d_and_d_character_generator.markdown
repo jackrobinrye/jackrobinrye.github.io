@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Javascript Random D&D Character Generator"
-date:       2020-06-10 01:28:07 +0000
+date:       2020-06-09 21:28:08 -0400
 permalink:  javascript_random_d_and_d_character_generator
 ---
 
