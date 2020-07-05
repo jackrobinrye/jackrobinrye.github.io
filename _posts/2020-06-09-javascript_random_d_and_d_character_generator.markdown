@@ -22,6 +22,16 @@ I start with creating the head of my page: the title and the create new player b
 
 The head of the page handled, nest up is all the various things to iterate through. I needed to iterate through 3 things: players, their characters, and each character's attrubutes. To do this, I needed to start at the top and go down. 
 
+A promise is a conditional statement that will produce a value at some time in the future. It either returns resolved or rejected after a conclusion about the running code has been made. 
+
+Javascript has built in asynchronous capabilities which allows the client to be updated without reloading the page. Fetch is the primary use of asynchronous methods in this project. The way it works is it's based off of promises. Fetch will return a promise every time it requests data from it's given URL. Then, using the .then() on the returned promise will ensure that code that depends on that data that is recieved will only run if the promise returns as resolved. There is also a .catch() that will run if the promise returns rejected instead of resolved. 
+
+Ahead of all other code, I wrote a fetch call to my API (in my backend) that holds my player information. This fetch will wait until a response has been recieved. After it has been recieved, I then used the JSON data in the response to initialize the app and display all players and characters.
+
+The other two fetch calls I used in my app were to create new players and create new characters in the back end. For new players, you fill out a form of information for your new player. When the form is submitted, that data is transfered through the backend via fetch and then comes back in the form of JSON data to be rendered on the site. 
+
+The create new characters fetch is triggered by pressing the add new character button. The character is generated on the backend then transfered to the front end via fetch. 
+
 My iteration process is as follows: iterate through the json data of all my players (renderPlayers function which is fed my fetched json data). The renderPlayers method calls takes each piece of player data from the json and creates a player object with it. Creating this player object creates all it's character objects, too, because of how a player is set up in player.js. We then iterate over this player object's characters. And for each player we iterate through it's attributes to display them in a table on the DOM.
 
 It basically goes:
