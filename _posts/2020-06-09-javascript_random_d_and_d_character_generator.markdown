@@ -26,6 +26,10 @@ A promise is a conditional statement that will produce a value at some time in t
 
 Javascript has built in asynchronous capabilities which allows the client to be updated without reloading the page. Fetch is the primary use of asynchronous methods in this project. The way it works is it's based off of promises. Fetch will return a promise every time it requests data from it's given URL. Then, using the .then() on the returned promise will ensure that code that depends on that data that is recieved will only run if the promise returns as resolved. There is also a .catch() that will run if the promise returns rejected instead of resolved. 
 
+Let's get a bit more technical about how the thens work with your fetch requests - why do we pass them a function? when do thens get run? when do the functions that we pass get run?
+
+We pass a function inside our .then() in order to use the data returned from our asynchronous method as a parameter for the callback function of that method. All .then()'s run if the previous asynchronous method returns a promised value of "resolved" (a callback function is only run once that preceding asynchronous gets that "resolved" promise back). 
+
 Ahead of all other code, I wrote a fetch call to my API (in my backend) that holds my player information. This fetch will wait until a response has been recieved. After it has been recieved, I then used the JSON data in the response to initialize the app and display all players and characters.
 
 The other two fetch calls I used in my app were to create new players and create new characters in the back end. For new players, you fill out a form of information for your new player. When the form is submitted, that data is transfered through the backend via fetch and then comes back in the form of JSON data to be rendered on the site. 
